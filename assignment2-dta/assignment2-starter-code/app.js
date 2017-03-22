@@ -37,9 +37,10 @@ function ShoppingListCheckOffService(){
   var toBuy = [];
   var bought = [];
 
-  toBuy.push("10 cookies");
-  toBuy.push("5 dounuts");
-  toBuy.push("2 cakes");
+  toBuy.push({ name: "cookies", quantity: 10});
+  toBuy.push({ name: "dounuts", quantity: 5});
+  toBuy.push({ name: "cakes", quantity: 2});
+
 
   service.checkAsBought = function (index){
     bought.push(toBuy[index]);
